@@ -39,7 +39,7 @@ main img {
   box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
 }
 
-/* Emoji banner */
+/* Emoji banner fixed box */
 .emoji-banner {
   width: 90%;
   max-width: 600px;
@@ -49,12 +49,18 @@ main img {
   background: linear-gradient(135deg, #fdf2f8, #eff6ff);
   font-size: 1.6rem;
   overflow: hidden;
-  white-space: nowrap;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  animation: scrollEmojis 20s linear infinite;
+  position: relative;
+  text-align: center;
 }
 
-@keyframes scrollEmojis {
+.emoji-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: moveEmojis 20s linear infinite;
+}
+
+@keyframes moveEmojis {
   0%   { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
@@ -85,4 +91,4 @@ footer p {
 .insta-btn:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  }
+}
