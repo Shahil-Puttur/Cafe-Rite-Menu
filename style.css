@@ -57,7 +57,9 @@ main img {
 .emoji-track {
   display: inline-block;
   white-space: nowrap;
-  animation: moveEmojis 35s linear infinite; /* Slowed down */
+  animation: moveEmojis 35s linear infinite;
+  animation-delay: 0s;       /* Start instantly */
+  animation-play-state: running;
 }
 
 @keyframes moveEmojis {
