@@ -57,7 +57,7 @@ main img {
 .emoji-track {
   display: inline-block;
   white-space: nowrap;
-  animation: moveEmojis 20s linear infinite;
+  animation: moveEmojis 35s linear infinite; /* Slowed down */
 }
 
 @keyframes moveEmojis {
@@ -91,4 +91,4 @@ footer p {
 .insta-btn:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
+  }
