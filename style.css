@@ -32,22 +32,31 @@ main {
   padding: 2rem 1rem;
 }
 
-/* Fade-in animation on page load */
 main img {
   width: 90%;
   max-width: 600px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeInUp 0.8s ease forwards;
 }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Emoji banner */
+.emoji-banner {
+  width: 90%;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #fdf2f8, #eff6ff);
+  font-size: 1.6rem;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: scrollEmojis 20s linear infinite;
+}
+
+@keyframes scrollEmojis {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
 
 /* Footer */
